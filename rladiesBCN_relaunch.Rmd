@@ -7,6 +7,7 @@ output:
     css: ["default", "rladies", "rladies-fonts"]
     lib_dir: ./demo_slides_files/libs
     nature:
+      beforeInit: "rladiesBCN_relaunch_files/macros.js"
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
@@ -18,35 +19,33 @@ output:
 options(htmltools.dir.version = FALSE)
 ```
 
-class: inverse, center, middle
-
-# Keep in touch
-
-<a href="mailto:mireia@rladies.org"><i class="fa fa-paper-plane fa-fw"></i>&nbsp; mireia@rladies.org</a><br>
-<!-- <a href="https://apreshill.rbind.io"><i class="fa fa-link fa-fw"></i>&nbsp; apreshill.rbind.io</a><br> -->
-<a href="http://twitter.com/mireia_bioinfo"><i class="fa fa-twitter fa-fw"></i>&nbsp; @mireia_bioinfo</a><br>
-<a href="http://github.com/mirthelle"><i class="fa fa-github fa-fw"></i>&nbsp; @mirthelle</a><br>
-<a href="http://cslu.ohsu.edu"><i class="fa fa-map-marker fa-fw"></i>&nbsp; Endocrine Regulatory Genomics (IGTP, Badalona)</a>
-
----
-
-# `whoami`
+# `whoami`: Mireia Ramos
 
 .pull-left[
 * BSc in Biomedicine; MSc in Bioinformatics.
+
 * Working on my PhD (4th year!!! `r icon::fa("skull")`)
+
 * Interested in genomics and epigenomics, but mostly programming!
+
 * `#rcatlady` 
 
 ]
 
 .pull-right[
-
+![:scale 75%](img/rcatlady.jpg)
 ]
 
 ---
 
-background-image: url("https://media.giphy.com/media/10ZkZlv7XYbNF6/giphy.gif")
+background-image: url("https://media.giphy.com/media/10GhnQUXGAH1eM/giphy.gif")
+class: center
+
+# `whoareyou`?
+
+---
+
+background-image: url("https://media.giphy.com/media/13AlcNEwe9utvG/giphy.gif")
 background-position: 50% 50%
 class: center, inverse
 
@@ -70,7 +69,7 @@ class: center, inverse
 ]
 
 .pull-right[
-![](https://rladies.org/wp-content/uploads/2016/12/R-LadiesGlobal.png)
+![:scale 80%](https://rladies.org/wp-content/uploads/2016/12/R-LadiesGlobal.png)
 ]
 
 ---
@@ -95,7 +94,7 @@ class: center, inverse
 * Friendship
 ]
 .pull-right[
-![](https://media.giphy.com/media/kLLDVeWnNwRXO/giphy.gif)
+![:scale 250%](https://media.giphy.com/media/kLLDVeWnNwRXO/giphy.gif)
 ]
 
 ---
@@ -108,12 +107,18 @@ class: center, inverse
     * `Rmarkdown`: RMarkdown tutorial and bioinformatics talk (2017-01-16).
     * `dplyr` and `tidyr`: Data wrangling with dplyr and tidyr (2017-03-20).
     
+--
+    
 * General talks:
     * Bioinformatics with R (2017-06-12).
     * Scalable Machine Learning in R and Python with H2O (2016-12-5).
+    
+--
 
 * Fast talks:
     * Genome exploration with Shiny (Today!).
+    
+--
     
 * Other ideas:
     * Book club.
@@ -131,211 +136,62 @@ class: center, inverse
 
 ---
 
-# Get **xaringan**
-
-Install the **xaringan** package from [Github](https://github.com/yihui/xaringan):
-
-```{r eval=FALSE, tidy=FALSE}
-devtools::install_github("yihui/xaringan")
-```
-
---
-
-You are recommended to use the [RStudio IDE](https://www.rstudio.com/products/rstudio/), but you do not have to.
-
-- Create a new R Markdown document from the menu `File -> New File -> R Markdown -> From Template -> Ninja Presentation`;
-
---
-
-- Click the `Knit` button to compile it;
-
---
-
-- or use the [RStudio Addin](https://rstudio.github.io/rstudioaddins/)<sup>1</sup> "Infinite Moon Reader" to live preview the slides (every time you update and save the Rmd document, the slides will be automatically reloaded in RStudio Viewer.
-
-.footnote[
-[1] See [#2](https://github.com/yihui/xaringan/issues/2) if you do not see the template or addin in RStudio.
-]
-
-
----
-background-image: url("https://media.giphy.com/media/q1zsIXcp8N2ne/giphy.gif")
+background-image: url("https://media.giphy.com/media/12niPtYoN2meuQ/giphy.gif")
 background-position: 50% 50%
 class: center, inverse
 
-
-# Use a theme
-
----
-
-# Themes
-
-You can use some user-contributed themes. A theme typically consists of two CSS files `foo.css` and `foo-fonts.css`, where `foo` is the theme name. Below are some existing themes:
-
-```{r}
-names(xaringan:::list_css())
-```
-
-To use a theme, you can specify the `css` option as an array of CSS filenames (without the `.css` extensions), e.g.,
-
-```yaml
-output:
-  xaringan::moon_reader:
-    css: [default, metropolis, metropolis-fonts]
-```
-
-If you want to contribute a theme to **xaringan**, please read [this blog post](https://yihui.name/en/2017/10/xaringan-themes).
-
+# And what about R-Ladies Barcelona?
 
 ---
 
-# The R-Ladies theme
+# R-Ladies Barcelona
 
-You can use it in the YAML metadata, e.g.:
+* Created in November, 2016 by Maëlle Salmon ([@ma_salmon](https://twitter.com/ma_salmon))
 
-```yaml
----
-title: "A Cool R-Ladies Presentation"
-output:
-  xaringan::moon_reader
-    css: ["default", "rladies", "rladies-fonts"]
-    nature:
-          highlightLines: true
----
-```
+* In August, 2017 Ania Alay ([@aniabmsi](https://twitter.com/aniabmsi)) and Mireia Ramos ([@mireia_bioinfo](https://twitter.com/aniabmsi)) 
 
-See the help page `?xaringan::moon_reader` for all possible options that you can use. 
+* Over 350 R-Ladies in 2 years!
 
-💜 Definitely use the `highlightLines: true` option- read on to see why! 
+```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, dev='svg'}
+info <- read.delim("rladiesBCN_relaunch_files/data/R-Ladies_Barcelona_Groups_Joins.txt",
+                   header=TRUE, 
+                   stringsAsFactors=FALSE)
+info$Date <- lubridate::dmy(info$Date)
+info$cumsum <- cumsum(info$Member.Joins)
 
----
-background-image: url("https://media.giphy.com/media/UqjSzv18agbgk/giphy.gif")
-background-position: 50% 50%
-class: center, inverse
+meetups <- read.csv("rladiesBCN_relaunch_files/data/meetup.csv",
+         stringsAsFactors=FALSE)[,1:2]
+meetups$X = 18
+meetups$Date <- lubridate::ymd(meetups$Date)
 
+info <- dplyr::left_join(info, meetups)
 
-# Now we can really have fun!
-
----
-
-# Side by side slides
-
-
-
-.pull-left[
-![](https://media.giphy.com/media/i1hiQy3uVZ0KQ/giphy.gif)
-]
-
-.pull-right[
-![](https://media.giphy.com/media/aptJIZbitjf2g/giphy.gif)
-]
-
-
-
----
-
-# Math Expressions
-
-You can write LaTeX math expressions inside a pair of dollar signs, e.g. &#36;\alpha+\beta$ renders $\alpha+\beta$. You can use the display style with double dollar signs:
-
-```
-$$\bar{X}=\frac{1}{n}\sum_{i=1}^nX_i$$
-```
-
-$$\bar{X}=\frac{1}{n}\sum_{i=1}^nX_i$$
-
-Limitations:
-
-1. The source code of a LaTeX math expression must be in one line, unless it is inside a pair of double dollar signs, in which case the starting `$$` must appear in the very beginning of a line, followed immediately by a non-space character, and the ending `$$` must be at the end of a line, led by a non-space character;
-
-1. There should not be spaces after the opening `$` or before the closing `$`.
-
-1. Math does not work on the title slide (see [#61](https://github.com/yihui/xaringan/issues/61) for a workaround).
-
----
-
-# R Code
-
-```{r comment='#'}
-# a boring regression
-fit = lm(dist ~ 1 + speed, data = cars)
-coef(summary(fit))
+library(cowplot)
+ggplot(info,
+       aes(Date, cumsum)) +
+  geom_line(aes(group=1), lwd=1) +
+  geom_point(pch=info$X, size=7, color="#88398A") +
+  scale_x_date() +
+  scale_y_continuous(breaks=scales::pretty_breaks(),
+                     name="# of R-Ladies")
 ```
 
 ---
 
-# R Plots
+# What do R-Ladies want?
 
-```{r cars, fig.height=4, dev='svg'}
-library(ggplot2)
-ggplot(cars, aes(speed, dist)) + geom_point()
-```
 
 ---
 
-# Tables
+class: inverse, center, middle
 
-If you want to generate a table, make sure it is in the HTML format (instead of Markdown or other formats), e.g.,
+# Keep in touch
 
-```{r}
-knitr::kable(head(iris), format = 'html')
-```
-
----
-
-# Highlight code
-
-- The option `highlightLines: true` of `nature` will highlight code lines that start with `*` or are wrapped in `{{ }}`;
-
-    ```yaml
-    output:
-      xaringan::moon_reader:
-        nature:
-          highlightLines: true
-    ```
-
-    See examples on the next page.
-
----
-
-# Highlight code
-
-
-.pull-left[
-An example using a leading `*`:
-
-    ```r
-    if (TRUE) {
-    ** message("Very important!")
-    }
-    ```
-Output:
-```r
-if (TRUE) {
-* message("Very important!")
-}
-```
-
-This is invalid R code, so it is a plain fenced code block that is not executed.
-]
-
-.pull-right[
-An example using `{{}}`:
-
-    `r ''````{r tidy=FALSE}
-    if (TRUE) {
-    *{{ message("Very important!") }}
-    }
-    ```
-Output:
-```{r tidy=FALSE}
-if (TRUE) {
-{{ message("Very important!") }}
-}
-```
-
-It is valid R code so you can run it.
-]
+<a href="mailto:mireia@rladies.org"><i class="fa fa-paper-plane fa-fw"></i>&nbsp; mireia@rladies.org</a><br>
+<!-- <a href="https://apreshill.rbind.io"><i class="fa fa-link fa-fw"></i>&nbsp; apreshill.rbind.io</a><br> -->
+<a href="http://twitter.com/mireia_bioinfo"><i class="fa fa-twitter fa-fw"></i>&nbsp; @mireia_bioinfo</a><br>
+<a href="http://github.com/mirthelle"><i class="fa fa-github fa-fw"></i>&nbsp; @mirthelle</a><br>
+<a href="http://cslu.ohsu.edu"><i class="fa fa-map-marker fa-fw"></i>&nbsp; Endocrine Regulatory Genomics (IGTP, Badalona)</a>
 
 
 ---
