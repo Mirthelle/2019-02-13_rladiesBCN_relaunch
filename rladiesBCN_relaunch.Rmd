@@ -5,14 +5,14 @@ author: "Mireia Ramos"
 output:
   xaringan::moon_reader:
     css: ["default", "rladies", "rladies-fonts"]
-    lib_dir: ./demo_slides_files/libs
+    lib_dir: ./rladiesBCN_relaunch_files/libs
     nature:
       beforeInit: "rladiesBCN_relaunch_files/macros.js"
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
     includes:
-      in_header: ./demo_slides_files/header.html
+      in_header: ./rladiesBCN_relaunch_files/header.html
 ---
 
 ```{r setup, include=FALSE}
@@ -33,7 +33,7 @@ options(htmltools.dir.version = FALSE)
 ]
 
 .pull-right[
-![:scale 75%](img/rcatlady.jpg)
+![:scale 75%](rladiesBCN_relaunch_files/img/rcatlady.jpg)
 ]
 
 ---
@@ -131,7 +131,7 @@ class: center, inverse
 
 --
 
-![](img/rshinylady.jpg)
+![](rladiesBCN_relaunch_files/img/rshinylady.jpg)
 [https://gqueiroz.shinyapps.io/rshinylady/](https://gqueiroz.shinyapps.io/rshinylady/)
 
 ---
@@ -178,14 +178,48 @@ ggplot(info,
 
 ---
 
-# What do R-Ladies want?
+# Who are our R-Ladies?
 
+![](rladiesBCN_relaunch_files/img/poll_rlvl.png)
+
+---
+# What do Barcelona R-Ladies want?
+
+![](rladiesBCN_relaunch_files/img/poll_expectations.png)
+
+---
+
+class: center
+
+# Keep in touch with us!
+
+<i class="fa fa-twitter fa-fw"></i> Follow us on twitter: [@RLadiesBCN](http://www.twitter.com/rladiesbcn)
+
+<i class="fa fa-meetup fa-fw"></i> Join our Meetup group: [R-Ladies Barcelona](https://www.meetup.com/rladies-barcelona/)
+
+<i class="fa fa-paper-plane fa-fw"></i> Send us an e-mail: [bcn@rladies.org](mailto:bcn@rladies.org)
+
+<i class="fa fa-slack fa-fw"></i> Join our slack group: `Sign up!`
+
+![:scale 80%](rladiesBCN_relaunch_files/img/slack.png)
+
+---
+
+class: inverse, middle, center
+
+# Call for speakers!
+
+### YOU decide the topic and format of your talk: workshop, personal experience, fast talk, research project, etc.
+
+### Just let us know!
+
+![](https://media.giphy.com/media/MOs4rJegbA35K/giphy.gif)
 
 ---
 
 class: inverse, center, middle
 
-# Keep in touch
+# Where to find me
 
 <a href="mailto:mireia@rladies.org"><i class="fa fa-paper-plane fa-fw"></i>&nbsp; mireia@rladies.org</a><br>
 <!-- <a href="https://apreshill.rbind.io"><i class="fa fa-link fa-fw"></i>&nbsp; apreshill.rbind.io</a><br> -->
